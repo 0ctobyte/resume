@@ -1,5 +1,5 @@
-LATEX=/usr/texbin/latex
-DVIPDF=/usr/texbin/dvipdf
+LATEX=latex
+DVIPDF=dvipdf
 
 FILE=resume.tex
 
