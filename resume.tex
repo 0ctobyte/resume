@@ -1,0 +1,461 @@
+% Resume
+
+\documentclass{article}
+
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{color}
+\usepackage[none]{hyphenat} % To remove hyphenation from paragraph text
+\usepackage{hyperref}
+
+\geometry{top=2cm,bottom=2cm,left=1.5cm,right=1.5cm}
+\hypersetup{colorlinks=true,linkcolor=blue,filecolor=magenta,urlcolor=blue}
+% \urlstyle{same}
+\pagestyle{empty}
+\setlength\parindent{0pt}
+
+\definecolor{darkcyan}{RGB}{0,139,139}
+\definecolor{darkgray}{RGB}{100,100,100}
+\definecolor{black}{RGB}{0,0,0}
+
+\renewenvironment{section}[2][\hfill]{\begin{minipage}[t]{0.20\columnwidth}#1\end{minipage}\begin{minipage}[t]{0.80\columnwidth}#2\end{minipage}}{\par}
+\newenvironment{heading1}{\fontfamily{phv}\selectfont\bfseries\large}{\par}
+\newenvironment{heading2}{\fontfamily{phv}\selectfont\bfseries\normalsize}{\par}
+\newenvironment{heading3}{\fontfamily{phv}\selectfont\bfseries\normalsize}{\par}
+\newenvironment{body1}{\fontfamily{phv}\selectfont\small}{\par}
+\newenvironment{body2}{\fontfamily{phv}\selectfont\itshape\small\begin{flushleft}}{\end{flushleft}\par}
+
+
+\begin{document}
+
+  \begin{multicols}{2}
+  
+    \begin{section}
+    {
+      \begin{heading1}
+        Sekhar Bhattacharya
+      \end{heading1}
+    }
+    \end{section}
+
+    \begin{section}
+    {
+      \begin{heading3}
+        \textcolor{darkcyan}{4A Computer Engineering}
+      \end{heading3}
+    }
+    \end{section}
+
+    \vspace*{0.5cm}
+
+    \begin{section}
+    [
+      \begin{body2}
+        \textcolor{darkgray}{Mobile}
+      \end{body2}
+    ]
+    {
+      \begin{body1}
+        647 302 5292
+      \end{body1}
+    }
+    \end{section}
+    
+    \begin{section}
+    [
+      \begin{body2}
+        \textcolor{darkgray}{Email}
+      \end{body2}
+    ]
+    {
+      \begin{body1}
+        s4bhatta@uwaterloo.ca
+      \end{body1}
+    }
+    \end{section}
+
+    \begin{section}
+    [
+      \begin{body2}
+        \textcolor{darkgray}{Student \#}
+      \end{body2}
+    ]
+    {
+      \begin{body1}
+        20381175
+      \end{body1}
+    }
+    \end{section}
+
+    \begin{section}
+    [
+      \begin{body2}
+        \textcolor{darkgray}{Github}
+      \end{body2}
+    ]
+    {
+      \begin{body1}
+        \url{http://github.com/0ctobyte}
+      \end{body1}
+    }
+    \end{section}
+
+    \vspace*{0.5cm}
+
+    \begin{section}
+    {
+      \begin{heading3}
+        \textcolor{darkcyan}{$\bullet$}
+      \end{heading3}
+    }
+    \end{section}
+
+    \vspace*{0.5cm}
+
+    \begin{section}
+    {
+      \begin{heading2}
+        Apple Inc
+      \end{heading2}
+    }
+    \end{section}
+
+    \begin{section}
+    {
+      \begin{heading3}
+        \textcolor{darkcyan}{Silicon Validation}
+      \end{heading3}
+    }
+    \end{section}
+
+    \begin{section}
+    [
+      \begin{body2}
+        \textcolor{darkgray}{Sept 2014 - Dec 2014}
+      \end{body2}
+    ]
+    {
+      \begin{body1}
+        Implemented software tools to aide in validation of SoCs (System-on-a-Chip). 
+        Developed code, in ARM assembly, to validate the design of the memory logic block.
+        Helped debug SoC failures and implemented code to maintain the validation platform software. 
+      \end{body1}
+    }
+    \end{section}
+
+    \vspace*{0.5cm}
+
+    \begin{section}
+    {
+      \begin{heading2}
+        Evertz Microsystems Ltd
+      \end{heading2}
+    }
+    \end{section}
+
+    \begin{section}
+    {
+      \begin{heading3}
+        \textcolor{darkcyan}{Hardware Engineering Intern}
+      \end{heading3}
+    }
+    \end{section}
+
+    \begin{section}
+    [
+      \begin{body2}
+        \textcolor{darkgray}{Jan 2014 - April 2014}
+      \end{body2}
+    ]
+    {
+      \begin{body1}
+        Developed VHDL code for use on Xilinx FPGAs. Implemented SPI and I\textsuperscript{2}C controllers in VHDL.
+        Used Chipscope to verify and test hardware synthesized from VHDL code on working products.
+        Used tools such as Phabrix, oscilloscopes and waveform monitors to debug hardware issues.
+      \end{body1}
+    }
+    \end{section}
+
+    \vspace*{0.5cm}
+
+    \begin{section}
+    {
+      \begin{heading2}
+        Blackberry Ltd
+      \end{heading2}
+    }
+    \end{section}
+
+    \begin{section}
+    {
+      \begin{heading3}
+        \textcolor{darkcyan}{Platform Software Developer Co-op}
+      \end{heading3}
+    }
+    \end{section}
+
+    \begin{section}
+    [
+      \begin{body2}
+        \textcolor{darkgray}{May 2013 - Aug 2013}
+      \end{body2}
+    ]
+    {
+      \begin{body1}
+        Developed C code to test and bring-up hardware in prototype Blackberry devices.
+        Helped implement a driver to communicate with a digital mic.
+        Wrote test code to verify hardware interface buses such as UART and I\textsuperscript{2}C.
+        Worked on a Blackberry app using C++ and Qt/QML.
+      \end{body1}
+    }
+    \end{section}
+
+    \vspace*{0.5cm}
+
+    \begin{section}
+    {
+      \begin{heading2}
+        Imlocal Inc
+      \end{heading2}
+    }
+    \end{section}
+
+    \begin{section}
+    {
+      \begin{heading3}
+        \textcolor{darkcyan}{Web Developer}
+      \end{heading3}
+    }
+    \end{section}
+
+    \begin{section}
+    [
+      \begin{body2}
+        \textcolor{darkgray}{Sept 2012 - Dec 2012}
+      \end{body2}
+    ]
+    {
+      \begin{body1}
+        Worked on UI for an iPhone app using Sencha and javascript.
+        Used Ruby on Rails and PostgreSQL for back-end.
+        Implemented a REST based API to connect app and back-end using JSON for data exchange.
+      \end{body1}
+    }
+    \end{section}
+
+    \vspace*{0.5cm}
+
+    \begin{section}
+    {
+      \begin{heading2}
+        Canadian Bank Note Company Ltd
+      \end{heading2}
+    }
+    \end{section}
+
+    \begin{section}
+    {
+      \begin{heading3}
+        \textcolor{darkcyan}{Software Developer}
+      \end{heading3}
+    }
+    \end{section}
+
+    \begin{section}
+    [
+      \begin{body2}
+        \textcolor{darkgray}{Jan 2011 - April 2011}
+      \end{body2}
+    ]
+    {
+      \begin{body1}
+        Worked on a web based security monitor.
+        Quickly picked up Python and Git on the job.
+        Developed code to send and receive data over UNIX sockets and parse syslog messages using PLY.
+        Developed a web app using Django to display and filter syslog messages.
+      \end{body1}
+    }
+    \end{section}
+
+    \vspace*{0.5cm}
+
+    \begin{section}
+    {
+      \begin{heading3}
+        \textcolor{darkcyan}{$\bullet$}
+      \end{heading3}
+    }
+    \end{section}
+
+    \vspace*{0.5cm}
+
+    \begin{section}
+    [
+      \begin{body2}
+        \textcolor{darkgray}{Expected Summer 2016}
+      \end{body2}
+    ]
+    {
+      \begin{heading2}
+        University of Waterloo
+      \end{heading2}
+      \par
+      \begin{heading3}
+        \textcolor{darkcyan}{Bachelor of Applied Science in Computer Engineering}
+      \end{heading3}
+    }
+    \end{section}
+
+    \vfill
+    \columnbreak
+    \vspace*{4.15cm}
+
+    \begin{minipage}[t]{\columnwidth}
+      
+      \begin{heading2}
+        Personal Projects
+      \end{heading2}
+
+      \begin{heading3}
+        \textcolor{darkcyan}{arm-kernel}
+      \end{heading3}
+
+      \begin{body1}
+        \url{http://github.com/0ctobyte/arm-kernel}
+      \end{body1}
+
+      \begin{section}
+      [
+        \begin{body2}
+          \textcolor{darkgray}{C \newline ARM}
+        \end{body2}
+      ]
+      {
+        \begin{body1}
+          An attempt at writing a very simple 32-bit kernel for ARM processors using concepts learned from the ECE 254 (OS) course.
+          Written in C and ARM assembly. Implemented page allocation, heap memory management, page table manipulation. Able to boot on real hardware (Beaglebone Black)! Work in progress.
+        \end{body1}
+      }
+      \end{section}
+
+      \vspace*{0.5cm}
+
+      \begin{heading3}
+        \textcolor{darkcyan}{ogl}
+      \end{heading3}
+
+      \begin{body1}
+        \url{http://github.com/0ctobyte/ogl}
+      \end{body1}
+
+      \begin{section}
+      [
+        \begin{body2}
+          \textcolor{darkgray}{C \newline GLSL}
+        \end{body2}
+      ]
+      {
+        \begin{body1}
+          Renders a 3D model specified by a Wavefront Object file. 
+          Renders model and materials as well applying textures specified by the Wavefront Object file. 
+          Uses OpenGL 4.1 with GLSL shaders which perform phong and goraud shading.
+          Implemented matrix and vector operations for vertex transformations.
+        \end{body1}
+      }
+      \end{section}
+
+      \vspace*{0.5cm}
+      
+      \begin{heading3}
+        \textcolor{darkcyan}{ece250ds}
+      \end{heading3}
+
+      \begin{body1}
+        \url{http://github.com/0ctobyte/ece250ds}
+      \end{body1}
+
+      \begin{section}
+      [
+        \begin{body2}
+          \textcolor{darkgray}{Python}
+        \end{body2}
+      ]
+      {
+        \begin{body1}
+          An implementation, in Python, of all data structures and algorithms taught in the ECE 250 (data structures) course. 
+          Implements data structures such as hash tables, priority queues, binary trees, graphs etc.
+          Implements algorithms such as Djikstra's algorithm, Bellman-Ford etc.
+        \end{body1}
+      }
+      \end{section}
+
+      \vspace*{0.5cm}
+
+      \begin{section}
+      {
+        \begin{heading3}
+          \textcolor{darkcyan}{$\bullet$}
+        \end{heading3}
+      }
+      \end{section}
+
+      \vspace*{0.5cm}
+
+      \begin{heading2}
+        Relevant Courses
+      \end{heading2}
+
+      \begin{section}
+      [
+        \begin{body2}
+          \textcolor{darkgray}{ECE 429 \newline
+            CS 488 \newline
+            ECE 327 \newline
+            ECE 254 \newline 
+            ECE 224 \newline 
+            ECE 250}
+        \end{body2}
+      ]
+      {
+        \begin{body2}
+          \textcolor{darkgray}{Computer Architecture \newline
+            Computer Graphics \newline
+            Digital Hardware Systems \newline
+            Operating Systems \& Systems Programming \newline 
+            Embedded Microprocessor Systems \newline
+            Algorithms \& Data Structures}
+        \end{body2}
+      }
+      \end{section}
+      
+      \vspace*{0.5cm}
+
+      \begin{section}
+      {
+        \begin{heading3}
+          \textcolor{darkcyan}{$\bullet$}
+        \end{heading3}
+      }
+      \end{section}
+
+      \vspace*{0.5cm}
+
+      \begin{heading2}
+        Areas of Interest
+      \end{heading2}
+
+      \begin{minipage}[t]{\columnwidth}
+        \begin{body2}
+          \textcolor{darkgray}{Operating systems \newline
+            CPU architecture \newline
+            Embedded systems \newline
+            3D graphics programming \newline
+            C/C++/ARM assembly programming}
+        \end{body2}
+      \end{minipage}
+
+    \end{minipage}
+
+  \end{multicols}
+
+\end{document}
