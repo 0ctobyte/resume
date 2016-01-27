@@ -9,4 +9,3 @@ all:
 
 clean:
 	rm *.out *.dvi *.aux *.log *.pdf
-
