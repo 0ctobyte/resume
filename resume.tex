@@ -41,7 +41,7 @@
     \begin{section}
     {
       \begin{heading3}
-        \textcolor{darkcyan}{4B Computer Engineering}
+        \textcolor{darkcyan}{Computer Engineer}
       \end{heading3}
     }
     \end{section}
@@ -69,20 +69,7 @@
     ]
     {
       \begin{body1}
-        s4bhatta@uwaterloo.ca
-      \end{body1}
-    }
-    \end{section}
-
-    \begin{section}
-    [
-      \begin{body2}
-        \textcolor{darkgray}{Student \#}
-      \end{body2}
-    ]
-    {
-      \begin{body1}
-        20381175
+        sekhar.bx@gmail.com
       \end{body1}
     }
     \end{section}
@@ -133,7 +120,9 @@
       \begin{body2}
         \textcolor{darkgray}{Sept 2014 - Dec 2014}\newline
         \textcolor{darkgray}{$\bullet$}\newline
-        \textcolor{darkgray}{Sept 2015 - Dec 2015}
+        \textcolor{darkgray}{Sept 2015 - Dec 2015}\newline
+        \textcolor{darkgray}{$\bullet$}\newline
+        \textcolor{darkgray}{Aug 2016 - Present}
       \end{body2}
     ]
     {
@@ -288,7 +277,7 @@
     \begin{section}
     [
       \begin{body2}
-        \textcolor{darkgray}{Expected Summer 2016}
+        \textcolor{darkgray}{Graduated Summer 2016}
       \end{body2}
     ]
     {
@@ -311,13 +300,38 @@
       \begin{heading2}
         Personal Projects
       \end{heading2}
-
+ 
       \begin{heading3}
-        \textcolor{darkcyan}{arm-kernel}
+        \textcolor{darkcyan}{goodboy}
       \end{heading3}
 
       \begin{body1}
-        \url{http://github.com/0ctobyte/arm-kernel}
+        \url{http://github.com/0ctobyte/goodboy}
+      \end{body1}
+
+      \begin{section}
+      [
+        \begin{body2}
+          \textcolor{darkgray}{C++}
+        \end{body2}
+      ]
+      {
+        \begin{body1}
+            An emulator for the original Nintendo GameBoy system written in C++.
+            Implemented a CPU instruction emulator for the Sharp LR35902 microprocessor (a Z80/Intel 8080 hybrid).
+            Implemented accurate emulation of various other hardware devices such as hardware timers, LCD, pixel processing unit, DMA etc.
+        \end{body1}
+      }
+      \end{section}
+
+      \vspace*{0.5cm}
+
+      \begin{heading3}
+        \textcolor{darkcyan}{procyon}
+      \end{heading3}
+
+      \begin{body1}
+        \url{http://github.com/0ctobyte/procyon}
       \end{body1}
 
       \begin{section}
@@ -328,8 +342,10 @@
       ]
       {
         \begin{body1}
-          An attempt at writing a very simple 32-bit kernel for ARM processors using concepts learned from the ECE 254 (OS) course.
-          Written in C and ARM assembly. Implemented page allocation, heap memory management, page table manipulation. Able to boot on real hardware (Beaglebone Black)! Work in progress.
+            Procyon is an dynamically scheduling, scalar, speculative processor written in SystemVerilog. It is fully synthesizable and runs on a 50MHz Altera Cyclone-IVe FPGA.
+            Developed various synthesizable hardware structures following Tomasulo's dynamic scheduling algorithm including the reorder buffer, reservation stations, register renaming etc.
+            Developed a pipelined integer execution unit as well as load store unit with a load and store queue to handle memory disambiguation.
+            Implemented a data cache and hardware structures to handle cache misses and to interface with a custom designed SRAM controller over a simple bus.
         \end{body1}
       }
       \end{section}
@@ -358,72 +374,6 @@
       \end{section}
 
       \vspace*{0.5cm}
-      
-      \begin{heading3}
-        \textcolor{darkcyan}{ece250ds}
-      \end{heading3}
-
-      \begin{body1}
-        \url{http://github.com/0ctobyte/ece250ds}
-      \end{body1}
-
-      \begin{section}
-      [
-        \begin{body2}
-          \textcolor{darkgray}{Python}
-        \end{body2}
-      ]
-      {
-        \begin{body1}
-          An implementation, in Python, of all data structures and algorithms taught in the ECE 250 (data structures) course. 
-          Implements data structures such as hash tables, priority queues, binary trees, graphs etc.
-          Implements algorithms such as Djikstra's algorithm, Bellman-Ford etc.
-        \end{body1}
-      }
-      \end{section}
-
-      \vspace*{0.5cm}
-
-      \begin{section}
-      {
-        \begin{heading3}
-          \textcolor{darkcyan}{$\bullet$}
-        \end{heading3}
-      }
-      \end{section}
-
-      \vspace*{0.5cm}
-
-      \begin{heading2}
-        Relevant Courses
-      \end{heading2}
-
-      \begin{section}
-      [
-        \begin{body2}
-            \textcolor{darkgray}{\hspace{6pt}CS 488 \newline
-            ECE 415 \newline
-            ECE 423 \newline
-            ECE 429 \newline
-            ECE 457B \newline
-            ECE 327 \newline
-            ECE 254}
-        \end{body2}
-      ]
-      {
-        \begin{body2}
-            \textcolor{darkgray}{Computer Graphics \newline
-            Multimedia Communications \newline
-            Embedded Computer Systems \newline
-            Computer Architecture \newline
-            Fundamentals of Computational Intelligence \newline
-            Digital Hardware Systems \newline
-            Operating Systems \& Systems Programming}
-        \end{body2}
-      }
-      \end{section}
-      
-      \vspace*{0.5cm}
 
       \begin{section}
       {
@@ -443,6 +393,7 @@
         \begin{body2}
           \textcolor{darkgray}{Operating systems \newline
             CPU architecture \newline
+            RTL Design and Validation \newline
             Embedded systems \newline
             3D graphics programming \newline
             C/C++/ARM assembly programming}
