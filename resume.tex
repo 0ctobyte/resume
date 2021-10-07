@@ -19,65 +19,124 @@
 \definecolor{darkgray}{RGB}{100,100,100}
 \definecolor{black}{RGB}{0,0,0}
 
-\newenvironment{me}{\fontfamily{phv}\selectfont\bfseries\large}{\par}
+\newenvironment{me}{\fontfamily{phv}\selectfont\bfseries\huge}{\par}
 \newenvironment{name}{\fontfamily{phv}\selectfont\bfseries\normalsize}{\par}
 \newenvironment{colorheading}{\fontfamily{phv}\selectfont\bfseries\normalsize\color{darkcyan}}{\par}
 \newenvironment{genericbody}{\fontfamily{phv}\selectfont\small\raggedright}{\par}
 \newenvironment{metadata}{\fontfamily{phv}\selectfont\itshape\small\color{darkgray}}{\par}
-\newenvironment{itemizedbody}{\fontfamily{phv}\selectfont\small\begin{itemize}}{\end{itemize}\par}
+\newenvironment{itemizedbody}{\fontfamily{phv}\selectfont\small\raggedright\begin{itemize}}{\end{itemize}\par}
 
 \newenvironment{info}[2]%
 {%
-  \begin{minipage}{0.20\linewidth}\begin{metadata}#1\end{metadata}\end{minipage}%
-  \begin{minipage}{0.80\linewidth}\begin{genericbody}#2\end{genericbody}\end{minipage}%
+  \begin{minipage}{0.30\linewidth}\begin{metadata}#1\end{metadata}\end{minipage}%
+  \begin{minipage}{0.70\linewidth}\begin{genericbody}#2\end{genericbody}\end{minipage}%
 }%
 {\par}
 
 \newenvironment{experience}[2]%
 {%
-  \begin{minipage}{0.6\linewidth}\begin{flushleft}#1\end{flushleft}\end{minipage}%
+  \begin{minipage}{0.71\linewidth}\raggedright#1\end{minipage}%
   \hfill%
-  \begin{minipage}{0.3\linewidth}\begin{flushright}#2\end{flushright}\end{minipage}%
+  \begin{minipage}{0.28\linewidth}\raggedleft#2\end{minipage}%
 }%
-{}
+{\par}
 
-\newcommand{\lineitem}{\item[{$\to$}]}
-\newcommand{\dotsep}{\begin{centering}\begin{colorheading}{$\bullet$}\end{colorheading}\end{centering}}
+\newcommand{\lineitem}{\item[{$\star$}]}
+\newcommand{\dotsep}{\smallskip\begin{centering}\begin{colorheading}{\large$\bullet$}\end{colorheading}\end{centering}\smallskip}
 
 \begin{document}
-  \begin{minipage}[t]{0.38\linewidth}
-    \begin{me}
-      Sekhar Bhattacharya
-    \end{me}
-    \begin{colorheading}
-      Computer Engineer
-    \end{colorheading}
+  \begin{minipage}[t]{0.30\linewidth}
+    \begin{me}Sekhar\end{me}
+    \begin{me}Bhattacharya\end{me}
+    \begin{colorheading}Computer Engineer\end{colorheading}
     \bigskip
+    \begin{genericbody}He $\bullet$ Him $\bullet$ His\end{genericbody}
+    \smallskip
     \begin{info}{Mobile}{+1408 513 5898}\end{info}
     \begin{info}{Email}{sekhar.bx@pm.me}\end{info}
-    \begin{info}{Github}{\url{http://github.com/0ctobyte}}\end{info}
-    \smallskip
+    \begin{info}{Github}{\href{https://github.com/0ctobyte}{0ctobyte}}\end{info}
+    \begin{info}{LinkedIn}{\href{https://linkedin.com/in/sekharbx}{sekharbx}}\end{info}
     \dotsep
-    \smallskip
     \begin{experience}
     {
       \begin{name}Education\end{name}
       \begin{colorheading}University of Waterloo\end{colorheading}
     }
     {
-      \begin{metadata}Graduated Summer 2016\end{metadata}
+      \begin{metadata}Graduated May 2016\end{metadata}
     }
     \end{experience}
     \begin{genericbody}
       Bachelor of Applied Science in Computer Engineering
     \end{genericbody}
+    \dotsep
+    \begin{experience}
+    {
+      \begin{name}Technology\end{name}
+    }{}
+    \end{experience}
+    \begin{genericbody}
+      ARMv8, C, C++, Forth, Python, Verilog, SystemVerilog, R, Git
+    \end{genericbody}
+    \smallskip
+    \begin{experience}
+    {
+      \begin{name}Interests\end{name}
+    }{}
+    \end{experience}
+    \begin{genericbody}
+      Operating systems, CPU architecture, RTL design and validation, machine learning/neural networks, data science, 3D graphics
+      programming, embedded systems
+    \end{genericbody}
+    \dotsep
+    \begin{experience}
+    {
+      \begin{name}Who am I?\end{name}
+      \begin{metadata}And why you should hire me\end{metadata}
+    }{}
+    \end{experience}
+    \begin{itemizedbody}[leftmargin=*]
+      \lineitem Friendly; I work well with others even in tense situations.
+      \lineitem Problem solver; I pride myself in being able to debug anything. I have a keen eye and catch things others may
+                miss. I apply the scientific method to great success.
+      \lineitem Creator; I'm passionate about building new things with code. I love ambitious projects where I can break down
+                and prioritize the necessary tasks to get to a minimum viable product.
+      \lineitem Learner; I'm continuously learning in my spare time. I read textbooks, I take online courses. I feel it helps
+                me quickly pick up new things on the job.
+    \end{itemizedbody}
+    \dotsep
+    \begin{experience}
+    {
+      \begin{name}Outside of Work\end{name}
+    }{}
+    \end{experience}
+    \smallskip
+    \begin{metadata}Basketball (Go Raptors!)\end{metadata}
+    \begin{metadata}Reading; I'm into Sci-Fi\end{metadata}
+    \begin{metadata}Long walks with my dog, Dudley\end{metadata}
+    \begin{metadata}Watching the latest hit shows \& movies\end{metadata}
+    \begin{metadata}Road trips to beaches and nature\end{metadata}
   \end{minipage}
   \hfill
-  \begin{minipage}[t]{0.6\linewidth}
+  \begin{minipage}[t]{0.67\linewidth}
+    \begin{experience}
+    {
+      \begin{name}Summary\end{name}
+    }{}
+    \end{experience}
+    \begin{itemizedbody}
+      \lineitem Computer engineer with a passion for developing software, designing hardware, and working on ambitious projects
+                (see my GitHub!)
+      \lineitem 6+ years of experience in post-silicon validation, bring-up, and firmware development with a deep understanding
+                of computer architecture and low-level firmware environments
+      \lineitem Methodical approach to debugging; lead many debugs at Apple driving towards root cause. I love debugging and
+                getting to the heart of the problem
+    \end{itemizedbody}
+    \dotsep
     \begin{experience}
     {
       \begin{name}Apple Inc\end{name}
-      \begin{colorheading}Silicon Validation\end{colorheading}
+      \begin{colorheading}Silicon Validation Engineer: CPU/Memory Hierarchy\end{colorheading}
     }
     {
       \begin{metadata}Sept 2014 - Dec 2014\end{metadata}
@@ -86,13 +145,13 @@
     }
     \end{experience}
     \begin{itemizedbody}
-      \lineitem Helped maintain and improve software tools used for the validation of Apple SoCs
+      \lineitem Maintained, improved and extended software tools used for the validation of Apple SoCs
       \lineitem Bring up said tools on silicon and FPGA and drive test plans to completion before tape-out deadlines
-      \lineitem Developed test content (C/ARM/Forth) running directly on silicon/FPGA in order to stress CPU,
-                memory hierarchy, power management features and various other SoC logic across all major Apple SoCs
-      \lineitem Worked with cross-functional teams to root cause hardware failures in the SoCs as well as developing
-                targeted test content to reproduce potential failures on silicon that were identified by design/formal
-                verification teams
+      \lineitem Developed test content (C/ARM/Forth) running directly on silicon/FPGA in order to stress CPU uArch, memory
+                hierarchy, power management features and various other SoC logic across all major Apple SoCs
+      \lineitem Worked with cross-functional teams to root cause SoC hardware failures as well as developing
+                targeted test content to reproduce potential failure modes on silicon identified by design/formal verification
+                teams
       \lineitem Supported debugging of any and all failures encountered by validation tools (software and hardware)
     \end{itemizedbody}
     \smallskip
@@ -107,24 +166,22 @@
     \end{experience}
     \begin{itemizedbody}
       \lineitem Implemented SPI and I\textsuperscript{2}C controllers in VHDL for use on Xilinx FPGAs
-      \lineitem Used Chipscope to verify and test hardware synthesized from VHDL code on working products
-      \lineitem Used tools such as Phabrix, oscilloscopes and waveform monitors to debug hardware issues
+      \lineitem Used Chipscope, Phabrix, and oscilloscopes to debug, verify and test hardware synthesized from VHDL code on
+                shipping products
     \end{itemizedbody}
     \smallskip
     \begin{experience}
     {
       \begin{name}Blackberry Ltd\end{name}
-      \begin{colorheading}Platform Software Developer Co-op\end{colorheading}
+      \begin{colorheading}Platform Software Developer Intern\end{colorheading}
     }
     {
       \begin{metadata}May 2013 - Aug 2013\end{metadata}
     }
     \end{experience}
     \begin{itemizedbody}
-      \lineitem Developed C code to test and bring-up hardware in prototype Blackberry devices
-      \lineitem Helped implement a driver to communicate with a digital mic
-      \lineitem Wrote test code to verify hardware interface buses such as UART and I\textsuperscript{2}C
-      \lineitem Worked on a Blackberry app using C++ and Qt/QML
+      \lineitem Performed hardware bring up for prototype Blackberry devices
+      \lineitem Developed C test code to verify interfaces such as UART and I\textsuperscript{2}C
     \end{itemizedbody}
     %\smallskip
     %\begin{experience}
@@ -137,8 +194,7 @@
     %}
     %\end{experience}
     %\begin{itemizedbody}
-    %  \lineitem Implemented a REST based API to connect app and back-end (PostgreSQL/Ruby on Rails) using JSON for
-    %           data exchange
+    %  \lineitem Implemented a REST based API to connect app and back-end (PostgreSQL/Ruby on Rails) using JSON for data exchange
     %\end{itemizedbody}
     %\smallskip
     %\begin{experience}
@@ -153,80 +209,71 @@
     %\begin{itemizedbody}
     % \lineitem Worked on a web based security monitor using the Django framework (Python)
     %\end{itemizedbody}
-    \smallskip
     \dotsep
-    \smallskip
     \begin{name}Personal Projects\end{name}
     \smallskip
     \begin{experience}
     {
       \begin{colorheading}goodboy\end{colorheading}
-      \begin{genericbody}\url{http://github.com/0ctobyte/goodboy}\end{genericbody}
+      \begin{genericbody}\url{https://github.com/0ctobyte/goodboy}\end{genericbody}
     }
     {
       \begin{metadata}C++\end{metadata}
     }
     \end{experience}
-    \par
     \begin{genericbody}
-      Built an emulator for the original Nintendo GameBoy system. Implemented a CPU instruction emulator for the Sharp
-      LR35902 microprocessor (z80 hybrid). Implemented accurate emulation of various other hardware devices (timers,
-      LCD, PPU, DMA etc.).
+      Built an emulator for the original Nintendo GameBoy system. Implemented a CPU instruction emulator for the Sharp LR35902
+      microprocessor (z80 hybrid). Implemented accurate emulation of various other hardware devices (timers, LCD, PPU, DMA etc.).
     \end{genericbody}
     \medskip
     \begin{experience}
     {
       \begin{colorheading}procyon\end{colorheading}
-      \begin{genericbody}\url{http://github.com/0ctobyte/procyon}\end{genericbody}
+      \begin{genericbody}\url{https://github.com/0ctobyte/procyon}\end{genericbody}
     }
     {
       \begin{metadata}SystemVerilog\end{metadata}
     }
     \end{experience}
-    \par
     \begin{genericbody}
-      Built a dynamic scheduling, scalar, speculative processor that runs on FPGA (Altera Cylone-IVe). Developed fully
-      synthesizable hardware structures including reorder buffer, reservation stations, register renaming etc.
-      Implemented load and store queues to handle out-of-order memory accesses + memory disambiguation. Built data
-      cache and miss queue for hit-under-miss optimization.
+      Built a dynamic scheduling, scalar, speculative processor that runs on FPGA (Altera Cylone-IVe). Developed synthesizable
+      hardware structures including reorder buffer, reservation stations, register renaming etc. Implemented load and store
+      queues to handle out-of-order memory accesses + memory disambiguation. Built data cache and miss queue for hit-under-miss
+      optimization.
     \end{genericbody}
     \medskip
     \begin{experience}
     {
-      \begin{colorheading}raytracer\end{colorheading}
-      \begin{genericbody}\url{http://github.com/0ctobyte/raytracer}\end{genericbody}
+      \begin{colorheading}popcorn\end{colorheading}
+      \begin{genericbody}\url{https://github.com/0ctobyte/popcorn}\end{genericbody}
     }
     {
-      \begin{metadata}C++\end{metadata}
-      \begin{metadata}Lua\end{metadata}
+      \begin{metadata}C\end{metadata}
+      \begin{metadata}ARMv8\end{metadata}
     }
     \end{experience}
     \begin{genericbody}
-      Generates a PNG of a 3D rendered scene described by a Lua based DSL. Implemented features such as bump/texture
-      mapping, reflection, refraction, soft shadows and other algorithms. Developed algorithms to perform lighting
-      computations and implemented multi-threading using pthreads. Gained a thorough understanding of 3D matrix/vector
-      mathematics and raytracing algorithms.
+      Built a very simple 64-bit micro-kernel for ARMv8 cores inspired by CMU Mach. Developed a virtual memory system,
+      task/thread system, scheduling and task/thread switching, fast memory allocator, shared locks. Implemented key algorithms
+      such as red-black trees, "completely fair scheduling", hash tables, linked lists, spin locks. Runs on Raspberry Pi 3 \& 4
+      with support for IRQ controllers and UART devices.
     \end{genericbody}
-    %\begin{section}
+    %\medskip
+    %\begin{experience}
     %{
-    %  \begin{colorheading}
-    %    {$\bullet$}
-    %  \end{colorheading}
+    %  \begin{colorheading}raytracer\end{colorheading}
+    %  \begin{genericbody}\url{http://github.com/0ctobyte/raytracer}\end{genericbody}
     %}
-    %\end{section}
-    %\vspace*{0.5cm}
-    %\begin{name}
-    %  Areas of Interest
-    %\end{name}
-    %\begin{minipage}[t]{\columnwidth}
-    %  \begin{metadata}
-    %    Operating systems \newline
-    %    CPU architecture \newline
-    %    RTL Design and Validation \newline
-    %    Embedded systems \newline
-    %    3D graphics programming \newline
-    %    C/C++/ARM assembly programming
-    %  \end{metadata}
-    %\end{minipage}
+    %{
+    %  \begin{metadata}C++\end{metadata}
+    %  \begin{metadata}Lua\end{metadata}
+    %}
+    %\end{experience}
+    %\begin{genericbody}
+    %  Generates a PNG of a 3D rendered scene described by a Lua based DSL. Implemented features such as bump/texture mapping,
+    %  reflection, refraction, soft shadows and other algorithms. Developed algorithms to perform lighting computations and
+    %  implemented multi-threading using pthreads. Gained a thorough understanding of 3D matrix/vector mathematics and raytracing
+    %  algorithms.
+    \end{genericbody}
   \end{minipage}
 \end{document}
