@@ -22,9 +22,9 @@
 \newenvironment{me}{\fontfamily{phv}\selectfont\bfseries\huge}{\par}
 \newenvironment{name}{\fontfamily{phv}\selectfont\bfseries\normalsize}{\par}
 \newenvironment{colorheading}{\fontfamily{phv}\selectfont\bfseries\normalsize\color{darkcyan}}{\par}
-\newenvironment{genericbody}{\fontfamily{phv}\selectfont\small\raggedright}{\par}
-\newenvironment{metadata}{\fontfamily{phv}\selectfont\itshape\small\color{darkgray}}{\par}
-\newenvironment{itemizedbody}{\fontfamily{phv}\selectfont\small\raggedright\begin{itemize}}{\end{itemize}\par}
+\newenvironment{genericbody}{\fontfamily{phv}\selectfont\footnotesize\raggedright}{\par}
+\newenvironment{metadata}{\fontfamily{phv}\selectfont\itshape\footnotesize\color{darkgray}}{\par}
+\newenvironment{itemizedbody}{\fontfamily{phv}\selectfont\footnotesize\raggedright\begin{itemize}}{\end{itemize}\par}
 
 \newenvironment{info}[2]%
 {%
@@ -134,13 +134,29 @@
     \dotsep
     \begin{experience}
     {
+      \begin{name}Cerebras Systems Inc\end{name}
+      \begin{colorheading}Wafer Bringup Engineer\end{colorheading}
+    }
+    {
+      \begin{metadata}Jan 2022 - Present\end{metadata}
+    }
+    \end{experience}
+    \begin{itemizedbody}
+      \lineitem Developed automated wafer bringup flow from power on to software usable configuration
+      \lineitem Worked with systems and ops teams to debug and root cause wafer related failures
+      \lineitem Developed new tests in Python to stress wafer and identify potential defects at various operating frequencies, voltage and temperature
+      \lineitem Analyze defect information after bringup to identify and work-around potential areas of concern
+    \end{itemizedbody}
+    \smallskip
+    \begin{experience}
+    {
       \begin{name}Apple Inc\end{name}
       \begin{colorheading}Silicon Validation Engineer: CPU/Memory Hierarchy\end{colorheading}
     }
     {
       \begin{metadata}Sept 2014 - Dec 2014\end{metadata}
       \begin{metadata}Sept 2014 - Dec 2015\end{metadata}
-      \begin{metadata}Aug 2016 - Present\end{metadata}
+      \begin{metadata}Aug 2016 - Jan 2022\end{metadata}
     }
     \end{experience}
     \begin{itemizedbody}
